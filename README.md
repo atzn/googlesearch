@@ -14,9 +14,18 @@ The same has to be done with InternetExplorerDriver (Although the path is not co
 What the test does
 ==================
 
-Runs Google search, testing pagination via Cucumber-JVM
+Runs Google search, sample search tests, testing pagination via Cucumber-JVM
 
 Credits
 ============
 
-To Cucumber-JVM author Aslak for the SharedDriver implementation
+To Cucumber-JVM author Aslak for the SharedDriver implementation. This allows WebDriver instance to stay alive after the execution of each scenario.
+
+Known Issues
+============
+
+Running the test on IntelliJ does not pass (?) because of Background usage (It'll prompt "Not started"); more investigation needed...
+
+Works with Eclipse.
+
+Tested on Windows 7 and Mac OS X 10.8
